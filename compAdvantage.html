@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Competitive Advantage</title>
+	<link rel="icon" type="image/x-icon" href="./favicon.ico" />
+	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i,400,700|Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.min.css" />
+	<!-- Global Site Tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-106659427-1"></script>
+	<script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)};
+        gtag('js', new Date());
+
+        gtag('config', 'UA-106659427-1');
+	</script>
+</head>
+<body>
+	<div class="rs-header-wrap">
+		<div class="rs-header-bg">
+			<header class="rs-header rs-row rs-clearfix">
+				<div class="rs-header-logo-wrap">
+					<a href="./index.html">
+						<img class="rs-header-logo" src="./assets/images/rs-logo-header.png" alt="Ringside MD" />
+					</a>
+				</div><!-- rs-header-logo -->
+				<div class="rs-mmenu">
+					<a class="rs-mmenu-link" href="#main-nav">Menu</a>
+				</div>
+				<nav class="rs-header-nav">
+					<ul>
+						<li>
+							<a href="./compAdvantage.html" class="rs-header-nav-link-active">Competitive Advantage</a>
+						</li>
+						<li>
+							<a href="./services.html">Services</a>
+						</li>
+						<li>
+							<a href="./insight.html">Insight</a>
+						</li>
+						<li>
+							<a href="./physicians.html">Physicians</a>
+						</li>
+						<li>
+							<a href="./careers.html">Careers</a>
+						</li>
+						<li>
+							<a href="./contact.aspx">Contact Us</a>
+						</li>
+					</ul>
+				</nav><!-- rs-header-nav -->
+			</header><!-- rs-header -->
+		</div><!-- rs-header-border -->
+	</div><!-- rs-header-wrap -->
+
+	<section class="rs-ca-bg-top rs-bg-img">
+		<div class="rs-row rs-ca-bg-top-block">
+			<h1 class="rs-ca-bg-top-title animated fadeInDown">Transform the health of your workforce to save money.</h1>
+			<p class="rs-ca-bg-top-desc">Calculate your savings by adjusting the sliders below.</p>
+			<div class="rs-ca-calc">
+				<div class="rs-ca-calc-col">
+					<div class="rs-ca-calc-row rs-ca-calc-row-first" id="rs-ca-calc-row-1">
+						<div class="rs-ca-calc-label">
+							<div class="rs-ca-calc-amount" id="numberEmployeesValue"></div>
+							<div class="rs-ca-calc-text">How many employees work at your largest site?</div>
+						</div>
+						<div class="rs-ca-calc-slider" id="numberEmployeesSlider"></div>
+					</div>
+					<div class="rs-ca-calc-row" id="rs-ca-calc-row-2">
+						<div class="rs-ca-calc-label">
+							<div class="rs-ca-calc-amount" id="salaryEmployeeValue"></div>
+							<div class="rs-ca-calc-text">What is the average salary for an employee in a year?</div>
+						</div>
+						<div class="rs-ca-calc-slider" id="salaryEmployeeSlider"></div>
+					</div>
+					<div class="rs-ca-calc-row" id="rs-ca-calc-row-3">
+						<div class="rs-ca-calc-label">
+							<div class="rs-ca-calc-amount" id="employeeSickDaysValue"></div>
+							<div class="rs-ca-calc-text">How many sick days does an employee take off in a year?</div>
+						</div>
+						<div class="rs-ca-calc-slider" id="employeeSickDaysSlider"></div>
+					</div>
+					<div class="rs-ca-calc-row">
+						<div class="rs-ca-calc-label">
+							<div class="rs-ca-calc-amount" id="employeeWorkSickValue"></div>
+							<div class="rs-ca-calc-text">How many days does an employee come to work sick in a year?</div>
+						</div>
+						<div class="rs-ca-calc-slider" id="employeeWorkSickSlider"></div>
+					</div>
+					<div class="rs-ca-calc-row">
+						<div class="rs-ca-calc-label">
+							<div class="rs-ca-calc-amount" id="employeeAllowanceValue"></div>
+							<div class="rs-ca-calc-text">How much do group benefits cost for an employee per year?</div>
+						</div>
+						<div class="rs-ca-calc-slider" id="employeeAllowanceSlider"></div>
+					</div>
+				</div>
+				<div class="rs-ca-calc-col">
+					<div class="rs-ca-calc-row rs-ca-calc-row-first rs-ca-calc-row-first-mobile" id="rs-ca-calc-row-11">
+						<div class="rs-ca-calc-col-wrap">
+							<div class="rs-ca-calc-text">Employees with at least one chronic disease</div>
+							<div class="rs-ca-calc-input-wrap">
+								<div class="rs-ca-calc-input" id="chronicDiseaseValue"></div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-ca-calc-row" id="rs-ca-calc-row-22">
+						<div class="rs-ca-calc-col-wrap">
+							<div class="rs-ca-calc-text">Total cost of illness and disability in one year*</div>
+							<div class="rs-ca-calc-input-wrap">
+								<div class="rs-ca-calc-input" id="totalCostValue"></div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-ca-calc-row" id="rs-ca-calc-row-33">
+						<div class="rs-ca-calc-col-wrap">
+							<div class="rs-ca-calc-text">
+								Total savings with Ringside MD in Year One**
+								<div class="rs-ca-calc-text-small">All outputs are based on Canadian data.</div>
+							</div>
+							<div class="rs-ca-calc-input-wrap">
+								<div class="rs-ca-calc-input" id="totalSavingsValue"></div>
+							</div>
+						</div>
+					</div>
+					<div class="rs-ca-calc-row rs-text-align-center">
+						<div class="rs-ca-calc-text-big">Understand how you are losing <span id="totalCostValue2"></span> a year.</div>
+						<button class="rs-ca-btn rs-ca-calc-btn" id="btnGetMyReport">Get my report</button>
+					</div>
+				</div>
+			</div><!-- rs-ca-calc -->
+			<div class="rs-ca-bg-top-note-wrap">
+				<p class="rs-ca-bg-top-note">*This is an <span class="rs-font-weight-semibold">underestimate</span> that does not
+					account for current health and wellness expenditures, disability claims, replacing a sick
+					employee, postponing important projects, and opportunity costs.</p>
+				<p class="rs-ca-bg-top-note">**This is an <span class="rs-font-weight-semibold">underestimate</span> that does not
+					account for savings or new revenue associated with reduced disability claims, increased employee
+					engagement and retention, and opportunity wins.</p>
+			</div>
+		</div><!-- rs-ca-bg-top-block -->
+		<div class="rs-arrow-wrap">
+			<div class="rs-arrow rs-arrow-white"></div>
+		</div>
+	</section><!-- rs-ca-bg-top -->
+
+	<section class="rs-ca-block-2">
+		<div class="rs-col-50 rs-col-left">
+			<div class="rs-ca-block-2-left-img"></div>
+			<div class="rs-ca-block-2-left-content rs-col-right rs-font-family-osc">
+				<div class="rs-bg-gradient-aqua">
+					Physician - <span class="rs-font-weight-bold">founded</span>
+				</div>
+				<div class="rs-bg-gradient-grey-2">
+					Physician - <span class="rs-font-weight-bold">LED</span>
+				</div>
+				<div class="rs-bg-gradient-red">
+					Physician - <span class="rs-font-weight-bold">operated</span>
+				</div>
+			</div><!-- rs-ca-block-2-left-content -->
+		</div>
+		<div class="rs-col-50 rs-col-left">
+			<div class="rs-ca-block-2-right">
+				<h4 class="rs-ca-block-2-right-title">
+					Finally, accessible healthcare that truly works for your employees and your company
+				</h4>
+				<p>As Canadian physicians, we are proud of our
+					healthcare system, and we are dedicated to making it better.  Our design starts with you.</p>
+				<p>Ringside MD is a new healthcare service that will
+					revolutionize how your workforce experiences comprehensive care. We believe in empowering
+					your workforce to be at their best everyday by improving employee access to comprehensive
+					and quality primary care.</p>
+				<p>We are physician leaders with advanced
+					degrees in Epidemiology and Environmental Sciences. Together we bring a broad range of expertise
+					in primary care, critical care, public health, and preventative medicine. We have a strong track
+					record of designing and implementing wellness programs and are eager to leverage our experience
+					to your benefit. Ringside MD is truly healthcare in your corner.</p>
+				<a href="./physicians.html" class="rs-ca-block-2-btn rs-btn rs-btn-aquamarine">
+                    See what else sets us apart
+				</a>
+			</div><!-- rs-ca-block-2-right -->
+		</div>
+	</section><!-- rs-ca-block-2 -->
+	
+	<section class="rs-ca-block-3">
+		<div class="rs-row rs-text-align-right rs-font-family-mw">
+			“my employer cares about my well-being” highly correlates with employee engagement
+			<span>- Towers Perrin Global Workforce Study</span>
+		</div>
+	</section><!-- rs-ca-block-3 -->
+
+	<section class="rs-ca-block-4">
+		<div class="rs-row rs-clearfix">
+			<div class="rs-ca-block-4-left rs-col-50 rs-col-left">
+				<h4 class="rs-ca-block-4-title">
+					Ringside MD projects a return on your investment of 1.2 to 2.4 starting in year one.
+				</h4>
+				<p>Inspired by a proven model, we work where
+					you work to optimize the health of your workforce and deliver healthy returns on your investment.</p>
+				<p>Our experience and research have shown that
+					working Canadians suffer from undiagnosed and under-treated illnesses. This affects their
+					quality of life, productivity, and ultimately your bottom line. By being present at your
+					facility, Ringside MD will change how your employees manage personal health. We will also
+					help reduce absenteeism, presenteeism, and group insurance premiums. Engage your employees
+					by supporting their health and well-being.</p>
+				<p>Ringside MD is changing the conversation in
+					the Canadian health and wellness industry.</p>
+			</div><!-- rs-ca-block-4-left -->
+			<div class="rs-ca-block-4-right rs-col-50 rs-col-left">
+				<h5 class="rs-ca-block-4-right-title">On-site healthcare delivers significant ROI</h5>
+				<div class="rs-ca-circle-chart">
+					<div class="rs-ca-circle-chart-label-top rs-col-50 rs-col-right">
+						Mercer’s National Survey of Employer-Sponsored  Health Plans (2015)
+					</div>
+					<div class="rs-ca-circle-chart-img">
+						<img src="./assets/images/rs-ca-circle-chart.png" alt="" />
+					</div>
+					<div class="rs-ca-circle-chart-label-bottom rs-clearfix">
+						<div class="rs-ca-circle-chart-label-bottom-left rs-col-50 rs-col-left">
+							<ul>
+								<li class="rs-ca-circle-chart-orange">ROI: 1.0–1.99</li>
+								<li class="rs-ca-circle-chart-red">ROI: 2.0 or higher</li>
+								<li class="rs-ca-circle-chart-blue">ROI: below 1.0</li>
+							</ul>
+						</div>
+						<div class="rs-ca-circle-chart-label-bottom-right rs-col-50 rs-col-left">
+							88% of companies in the US reported a return on their investment of greater than 1.
+						</div>
+					</div>
+				</div><!-- rs-ca-circle-chart -->
+			</div><!-- rs-ca-block-4-right -->
+		</div>
+	</section><!-- rs-ca-block-4 -->
+
+	<section class="rs-ca-block-5 rs-bg-img">
+		<div class="rs-row rs-clearfix">
+			<div class="rs-ca-block-5-wrap rs-col-50 rs-col-left rs-bg-gradient-white-3">
+				<h4 class="rs-ca-block-5-title">
+					In a single year a company of 1,000 employees will lose over 10,000 days of productivity to
+					absenteeism. 83% is due to illness and disability.*
+				</h4>
+				<p>This has been estimated to cost you 2.4% of your payroll.*</p>
+				<p>Ringside MD reduces the time your employees take from work
+					due to illness and to see a doctor. Our total healthcare solution treats illness on-site and prevents
+					future health issues.</p>
+				<p class="rs-ca-block-5-desc">*Reference: Conference Board of Canada and Statistics Canada</p>
+			</div><!-- rs-ca-block-5-wrap -->
+		</div>
+	</section><!-- rs-ca-block-5 -->
+
+	<section class="rs-ca-block-6 rs-table">
+		<div class="rs-ca-block-6-left rs-table-cell rs-col-50"></div><!-- rs-ca-block-6-left -->
+		<div class="rs-table-cell rs-col-50">
+			<div class="rs-ca-block-6-right">
+				<h4 class="rs-ca-block-6-title">
+					Ringside MD is a tool that boosts your productivity.
+				</h4>
+				<p>Most employees feel compelled
+					to come to work rather than take a sick day.  They are clocked in but checked out.
+					This is known as Presenteeism.  A Global Corporate Challenge study reports that Presenteeism
+					accounts for 57.5 days of lost productivity per employee per year.  Disability and chronic
+					disease are significant contributors to this problem. </p>
+				<p>Ringside MD is in your corner
+					to support your employees and keep them functioning at their best.</p>
+				<a href="./insight.html" class="rs-ca-block-6-right-btn rs-btn rs-btn-white-opacity rs-text-align-left">
+                    Click here to understand how presenteeism is costing you
+				</a>
+			</div><!-- rs-ca-block-6-right -->
+		</div>
+	</section><!-- rs-ca-block-6 -->
+	
+	<section class="rs-ca-block-7 rs-table">
+		<div class="rs-ca-block-7-left rs-table-cell">
+			<div class="rs-ca-block-7-left-wrap rs-col-right">
+				<h4 class="rs-ca-block-7-left-title">
+					Ringside MD can help drive down the cost of group insurance premiums for your business.
+				</h4>
+				<p>Prescription drug costs are the major driver of annual
+					group insurance premium increases. Our Prescription Stewardship Program promotes evidence-informed
+					prescribing practices, which optimizes chronic disease management and protects employees
+					from unnecessary prescriptions and investigations.</p>
+				<p>Having physicians on site has the added benefit of a
+					customized experience specific to your needs.  Ringside MD’s analysis of your overall
+					insurance claims, our electronic medical records, and health indicators will guide our interventions.</p>
+				<p class="rs-ca-block-7-left-desc">Take control of rising healthcare costs with Ringside MD.</p>
+			</div><!-- rs-ca-block-7-left-wrap -->
+		</div><!-- rs-ca-block-7-left -->
+		<div class="rs-ca-block-7-right rs-table-cell">
+			<div class="rs-ca-block-7-right-wrap">
+				<h5 class="rs-ca-block-7-right-title">Organizations’ top 5 reasons for establishing a worksite clinic</h5>
+				<p>(respondents allowed to select multiple reasons)</p>
+				<div class="rs-ca-bar-chart">
+					<div class="rs-ca-bar-chart-item" style="width: 91%;">
+						<div class="rs-ca-bar-chart-item-value">91%</div>
+						<div class="rs-ca-bar-chart-item-title">Controlling  total health spending</div>
+						<div class="rs-ca-bar-chart-item-line" style="background-color: #ff5000;"></div>
+					</div>
+					<div class="rs-ca-bar-chart-item" style="width: 77%;">
+						<div class="rs-ca-bar-chart-item-value">77%</div>
+						<div class="rs-ca-bar-chart-item-title">Reducing lost employee productivity</div>
+						<div class="rs-ca-bar-chart-item-line" style="background-color: #ff621a;"></div>
+					</div>
+					<div class="rs-ca-bar-chart-item" style="width: 74%;">
+						<div class="rs-ca-bar-chart-item-value">74%</div>
+						<div class="rs-ca-bar-chart-item-title">Enhancing health/wellness leadership image</div>
+						<div class="rs-ca-bar-chart-item-line" style="background-color: #ff7333;"></div>
+					</div>
+					<div class="rs-ca-bar-chart-item" style="width: 72%;">
+						<div class="rs-ca-bar-chart-item-value">72%</div>
+						<div class="rs-ca-bar-chart-item-title">Managing employee health risk and chronic conditions</div>
+						<div class="rs-ca-bar-chart-item-line" style="background-color: #7bbac0;"></div>
+					</div>
+					<div class="rs-ca-bar-chart-item" style="width: 68%;">
+						<div class="rs-ca-bar-chart-item-value">68%</div>
+						<div class="rs-ca-bar-chart-item-title">Improving member access to health care</div>
+						<div class="rs-ca-bar-chart-item-line" style="background-color: #c9d7d8;"></div>
+					</div>
+				</div><!-- rs-ca-bar-chart -->
+				<div class="rs-ca-block-7-right-note">Sourced from: Mercer’s National Survey of Employer-Sponsored Health Plans (2015).</div>
+			</div>
+		</div><!-- rs-ca-block-7-right -->
+	</section><!-- rs-ca-block-7 -->
+	
+	<section class="rs-ca-block-8 rs-bg-img">
+		<div class="rs-row rs-clearfix">
+			<div class="rs-ca-block-8-wrap rs-col-50 rs-col-right rs-bg-gradient-white-4">
+				<h4 class="rs-ca-block-8-title">
+					It’s about your people.
+				</h4>
+				<p>Being the best employer means
+					protecting and empowering your biggest asset: your people. Ringside MD will lead you to a
+					frontier where health unleashes the full potential of your company. </p>
+				<p>Our model is compliant with
+					Ontario laws and requirements. Companies in Ontario will now have the opportunity to
+					foster a better work environment and elevate their profile as employers. </p>
+				<p>On-site primary care is the service
+					your company has been waiting for.</p>
+			</div>
+		</div>
+	</section><!-- rs-ca-block-8 -->
+
+	<div class="rs-footer-wrap">
+		<footer class="rs-footer rs-row rs-clearfix">
+			<div class="rs-footer-logo-wrap">
+				<a href="./index.html">
+					<img class="rs-footer-logo" src="./assets/images/rs-logo-footer.png" alt="Ringside MD" />
+				</a>
+			</div><!-- rs-footer-logo -->
+			<nav class="rs-footer-nav">
+				<ul class="rs-footer-nav-top">
+					<li>
+						<a href="./compAdvantage.html">Competitive Advantage</a>
+					</li>
+					<li>
+						<a href="./services.html">Services</a>
+					</li>
+					<li>
+						<a href="./insight.html">Insight</a>
+					</li>
+					<li>
+						<a href="./physicians.html">Physicians</a>
+					</li>
+					<li>
+						<a href="./careers.html">Careers</a>
+					</li>
+					<li>
+						<a href="./contact.aspx">Contact Us</a>
+					</li>
+				</ul><!-- rs-footer-nav-top -->
+				<ul class="rs-footer-nav-bottom">
+					<li>
+						<a href="./privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li>
+						<a href="./terms.html">Terms of Use</a>
+					</li>
+					<li>
+						<a href="./sitemap.html">Site Map</a>
+					</li>
+				</ul>
+				<div class="rs-footer-copy">Copyright &copy; 2017 Ringside MD. All rights reserved</div>
+			</nav><!-- rs-footer-nav -->
+		</footer><!-- rs-footer -->
+	</div><!-- rs-footer-wrap -->
+
+	<div class="rs-ca-form" id="windowRegistration">
+		<div class="rs-ca-form-head rs-text-align-center">You are almost done! <br/>Where should we send your report?</div>
+		<div class="rs-ca-form-body">
+			<div class="rs-ca-form-text rs-text-align-center">Your report will include a detailed breakdown of cost drivers,
+				savings with Ringside MD, and helpful resources that will transform your approach to
+				employee health and wellness.
+			</div>
+			<form id="formRegistration" name="formRegistration">
+				<input type="hidden" name = "numberEmployees" id="numberEmployees" value="" />
+				<input type="hidden" name = "salaryEmployee" id="salaryEmployee" value="" />
+				<input type="hidden" name = "employeeSickDays" id="employeeSickDays" value="" />
+				<input type="hidden" name = "employeeWorkSick" id="employeeWorkSick" value="" />
+				<input type="hidden" name = "employeeAllowance" id="employeeAllowance" value="" />
+				<input type="hidden" name = "chronicDisease" id="chronicDisease" value="" />
+				<input type="hidden" name = "totalCost" id="totalCost" value="" />
+				<input type="hidden" name = "totalSavings" id="totalSavings" value="" />
+
+				<div class="rs-ca-form-input-wrap">
+					<input type="email" name="email" value="" id="email" maxlength="100" placeholder="Business E-mail" class="rs-ca-form-input rs-ca-form-input-first" />
+				</div>
+				<div class="rs-ca-form-input-wrap">
+					<input type="text" name="firstName" value="" id="firstName" maxlength="100" placeholder="First Name" class="rs-ca-form-input" />
+				</div>
+				<div class="rs-ca-form-input-wrap">
+					<input type="text" name="lastName" value="" id="lastName" maxlength="100" placeholder="Last Name" class="rs-ca-form-input" />
+				</div>
+				<div class="rs-ca-form-input-wrap">
+					<select name="jobLevel" id="jobLevel" class="rs-ca-form-select">
+						<option disabled selected hidden>Job Level</option>
+						<option value="C-level">C-level</option>
+						<option value="VP">VP</option>
+						<option value="Director">Director</option>
+						<option value="Manager">Manager</option>
+						<option value="Associate">Associate</option>
+					</select>
+				</div>
+				<div class="rs-ca-form-input-wrap">
+					<input type="tel" name="phone" value="" id="phone" maxlength="100" placeholder="Phone" class="rs-ca-form-input" />
+				</div>
+				<div class="rs-text-align-center">
+					<div class="rs-ca-form-note">(Your information is safe and will not be shared)</div>
+					<input type="submit" value="submit" class="rs-ca-btn rs-ca-form-btn" id="formSubmit" />
+					<div class="rs-ca-form-link-wrap"><span class="rs-ca-form-link" id="btnGoBack">Go Back</span></div>
+				</div>
+			</form>
+		</div>
+	</div><!-- rs-ca-form -->
+
+	<div class="rs-ca-success rs-text-align-center" id="windowSuccess">
+		<div class="rs-ca-success-img"></div>
+		<div class="rs-ca-success-title">Your report is on it's way!</div>
+		<div class="rs-ca-success-desc">Be a champion for your company, share this tool with your
+			leadership to help save money.
+		</div>
+		<button class="rs-ca-btn rs-ca-success-btn" id="btnSuccess">Ok</button>
+	</div><!-- rs-ca-success -->
+
+	<div class="rs-ca-bg-popup" id="bgPopup"></div><!-- rs-ca-bg-popup -->
+
+	<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type='text/javascript' src='./assets/js/jquery.validate.min.js'></script>
+	<script type='text/javascript' src='./assets/js/nouislider.min.js'></script>
+	<script type='text/javascript' src='./assets/js/wNumb.min.js'></script>
+	<script type='text/javascript' src='./assets/js/script.min.js'></script>
+	<script type='text/javascript' src='./assets/js/form.min.js'></script>
+	</body>
+</html>
